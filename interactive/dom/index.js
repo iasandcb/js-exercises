@@ -1,19 +1,16 @@
 const children = document.children;
 const htmlEl = children[0]; // root element
 const htmlChildren = htmlEl.children;
-const bodyEl = htmlChildren[1]; // indexing 인덱싱 1
+const bodyEl = htmlChildren[1]; // indexing
 const pEl = bodyEl.children[0];
 const idAttr = pEl.getAttribute('id');
-pEl.setAttribute('id', 'test2'); // 조작
+pEl.setAttribute('id', 'test2'); 
 pEl.style.backgroundColor = 'wheat';
-pEl.textContent = 'Test2';
+pEl.textContent = 'Test again';
 
-const bodyEl = document.querySelector('body');
-const pEl = document.createElement('p');
-pEl.textContent = 'Hello';
+const pEl3 = document.createElement('p');
+pEl3.textContent = 'Test 3';
+bodyEl.append(pEl3); 
+
 const p2El = bodyEl.children[1];
-p2El.remove();
-p2El.before(pEl);
-
-bodyEl.append(pEl); 
-bodyEl.prepend(pEl);
+p2El.before(pEl3);
