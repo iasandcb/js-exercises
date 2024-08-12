@@ -17,3 +17,12 @@ console.log('array index 1 again', a1);
 console.log('array index 1 directly', a[1]);
 const o = {name: 'Alex Lee', age: 1, smoking: false};
 console.log('object', o);
+
+const bigInt = 9007199254740993n;
+console.log('BigInt', bigInt);
+const i2 = 9007199254740995;
+console.log('int', i2);
+
+const user = Symbol();
+const user2 = user;
+console.log('comparison', user === user2);
