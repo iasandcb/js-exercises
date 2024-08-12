@@ -1,9 +1,9 @@
-// 속성으로 객체를 관찰
+// 속성으로 객체를 관찰(접근)
 const children = document.children; 
 const htmlEl = children[0]; // root element <html> // 변수 이름에는 기능이 없다. 줄일려고. htmlElement
 const htmlChildren = htmlEl.children;
 const bodyEl = htmlChildren[1]; // indexing
-let pEl = bodyEl.children[0];
+let pElement = bodyEl.children[0];
 
 // 메소드로 객체를 관찰
 const idAttr = pEl.getAttribute('id'); // idAttr = "test"
@@ -22,9 +22,10 @@ bodyEl.append(pEl3);
 
 const p2El = bodyEl.children[1];
 p2El.before(pEl3);
+
+// Extra
 console.log('status', p2El.dataset.status);
 p2El.dataset.status = 'done';
-
 
 // console.log('p outer', pEl.outerHTML);
 pEl.outerHTML = '<p id="test4">Test 4</p>';
