@@ -34,6 +34,8 @@ function printThis() {
 				console.log(this.content);
 }
 
+// printThis -> 함수 객체
+// printThis() -> 함수 호출 결과
 const myObj = {
 				content: 'Alex Lee',
 				printContent: printThis
