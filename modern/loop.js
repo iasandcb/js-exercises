@@ -18,6 +18,10 @@ numbers.forEach(
 );
 console.log('sum', sum);
 
+sum = 0;
+numbers.forEach(element => sum += element);
+console.log('sum', sum);
+
 // map
 const twiceNumbers = numbers.map(
   element => element * 2
