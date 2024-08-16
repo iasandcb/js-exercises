@@ -1,7 +1,8 @@
 function printCatName(user) {
 	console.log('AND', user.cat && user.cat.name);
 	console.log('OC impl', user.cat === null || user.cat === undefined ? undefined : user.cat.name);
-	console.log('OC', user.cat?.name);
+	console.log('OC', user.cat?.name ?? 'Anon');
+	// redundancy 중복 
 }
 
 const user1 = {
