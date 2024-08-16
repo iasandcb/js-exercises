@@ -17,3 +17,21 @@ console.log('sum', sum);
 for (let i = 0; i < 10; i++) {
 				console.log('i2', i);
 }
+
+let data = [1, 2];
+
+const checkLogic = e => e > 2;
+const checkData = data.some(checkLogic);
+
+console.log('checkData', checkData);
+
+function addItem(newItem) {
+	data.push(newItem);
+	const checkDataNewItem = data.some(checkLogic);
+	console.log('data after adding an item', data);
+	console.log('checkDataNewItem', checkDataNewItem);
+}
+
+addItem(3);
+
+console.log('checkData again', checkData);
