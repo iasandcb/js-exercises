@@ -24,4 +24,40 @@ a('Alex', 'Mint');
 
 console.log('끝');
 
+console.log('1');
+
+setTimeout(() => console.log('2'), 2000);
+
+console.log('3');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
